@@ -15,6 +15,7 @@ wheels or pure python applications.
 Build for linux:
 
 ```
+$ cd example/app
 $ pip install shiv
 $ shiv . -e app.__main__:cli -o app.pyz
 $ ./app.pyz
@@ -23,6 +24,7 @@ $ ./app.pyz
 Build for windows:
 
 ```
+$ cd example/app
 $ docker run -v "$(pwd):/src/" shiv "shiv . -e app.__main__:cli -o app.pyz"
 ```
 
@@ -34,6 +36,21 @@ To run it
 # copy to windows
 # you need to specify the interpreter the version should be the same
 $ python app.pyz
+```
+
+### Add python interpreter
+
+To have all in one place it is also possible to add the python interpreter.
+
+```
+$ PYTHON_VERSION=3.6.8
+$ wget https://www.python.org/ftp/python/$PYTHON_VERSION/python-$PYTHON_VERSION-embed-amd64.zip
+$ unzip python-PYTHON_VERSION-embed-amd64.zip -d python
+$ rm python-$PYTHON_VERSION-embed-amd64.zip
+$ vim run.bat
+ECHO Starting app.pyz
+ECHO To stop press CTRL+PAUSE
+python\python.exe app.pyz run
 ```
 
 ### Is it possible to use a package mirror?
