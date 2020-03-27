@@ -1,0 +1,4 @@
+example/app/installer.exe
+.mypy_cache
+example/app/python/
+example/app/app.pyz

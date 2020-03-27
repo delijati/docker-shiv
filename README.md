@@ -45,13 +45,15 @@ To have all in one place it is also possible to add the python interpreter.
 ```
 $ PYTHON_VERSION=3.6.8
 $ wget https://www.python.org/ftp/python/$PYTHON_VERSION/python-$PYTHON_VERSION-embed-amd64.zip
-$ unzip python-PYTHON_VERSION-embed-amd64.zip -d python
+$ unzip python-$PYTHON_VERSION-embed-amd64.zip -d python
 $ rm python-$PYTHON_VERSION-embed-amd64.zip
 $ vim run.bat
 ECHO Starting app.pyz
 ECHO To stop press CTRL+PAUSE
 python\python.exe app.pyz run
 ```
+
+Have a look into the `example` app.
 
 ### Is it possible to use a package mirror?
 
@@ -63,6 +65,10 @@ Some packages seam to not work well in zippapp pandas==1.0.3 has import errors
 but pandas==1.0.1 work.
 
 ## History
+
+#### [1.1] - 2020-03-27
+Added NSIS installer
+Added NSIS installer to example app
 
 #### [1.0] - 2020-03-14
 Initial release
