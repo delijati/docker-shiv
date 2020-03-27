@@ -25,7 +25,7 @@ Build for windows:
 
 ```
 $ cd example/app
-$ docker run -v "$(pwd):/src/" shiv "shiv . -e app.__main__:cli -o app.pyz"
+$ docker run -v "$(pwd):/src/" delijati/shiv64 "shiv . -e app.__main__:cli -o app.pyz"
 ```
 
 This will create a `app.pyz` that has all dependencies added in a zip.
@@ -67,11 +67,11 @@ but pandas==1.0.1 work.
 ## History
 
 #### [1.1] - 2020-03-27
-Added NSIS installer
-Added NSIS installer to example app
+- Added NSIS installer
+- Added NSIS installer to example app
 
 #### [1.0] - 2020-03-14
-Initial release
+- Initial release
 
 
 ## License
