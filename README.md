@@ -81,3 +81,7 @@ MIT
 ## Thanks
 
 Thanks to https://github.com/cdrx/docker-pyinstaller that i used as template.
+
+## TODO
+
+Try darling aka wine for macos https://github.com/utensils/docker-darling
