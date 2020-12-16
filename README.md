@@ -43,7 +43,7 @@ $ python app.pyz
 To have all in one place it is also possible to add the python interpreter.
 
 ```
-$ PYTHON_VERSION=3.6.8
+$ PYTHON_VERSION=3.8.6
 $ wget https://www.python.org/ftp/python/$PYTHON_VERSION/python-$PYTHON_VERSION-embed-amd64.zip
 $ unzip python-$PYTHON_VERSION-embed-amd64.zip -d python
 $ rm python-$PYTHON_VERSION-embed-amd64.zip
@@ -65,6 +65,10 @@ Some packages seam to not work well in zippapp pandas==1.0.3 has import errors
 but pandas==1.0.1 work.
 
 ## History
+
+#### [2.0] - 2020-12-15
+- Use python 3.8.6
+- Use winehq-stable as of a bug: https://github.com/cdrx/docker-pyinstaller/issues/103#issuecomment-745932021
 
 #### [1.1] - 2020-03-27
 - Added NSIS installer

@@ -1,5 +1,5 @@
 #!/bin/bash
-PYTHON_VERSION=3.6.8
+PYTHON_VERSION=3.8.6
 
 rm app.pyz
 rm installer.exe
